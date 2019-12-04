@@ -15,3 +15,13 @@ The run analysis script follows this procedure:
 6. Select only the features that use the mean(), std(), or meanFreq() metric. This is done using grep() on the column names. As a note the columns that used a mean value to create the variable were not used, only the features that had mean as the metric.
 7. Group the data by subject and activity and take the mean of each feature. This was done using data.table.
 8. Write the resulting data.table to a text file using write.table.
+
+## Why is the dataset tidy?
+According to "Tidy Data" by Hadley Wickham tidy data must satisfy three principles:
+1. Each variable forms a column
+2. Each observation forms a row
+3. Each type of observational unit forms a table
+
+Criteria 1 is satisifed because each column is it's own feature of the data. It would be possible to further parse the data with an addiotional column containing the statistical metric (ie. mean(), std(), meanFreq()). However, this was not done because it's not obvious that would make the data any easier to work with or more clear.
+Criteria 2 is satisfied because each row is a single observation about a specific subject and activity.
+Criteria 3 is satisfied because we only have one table that contains observational units about subject's accelerometer data. 
