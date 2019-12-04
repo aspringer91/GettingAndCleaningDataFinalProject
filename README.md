@@ -22,6 +22,6 @@ According to "Tidy Data" by Hadley Wickham tidy data must satisfy three principl
 2. Each observation forms a row
 3. Each type of observational unit forms a table
 
-Criteria 1 is satisifed because each column is it's own feature of the data. It would be possible to further parse the data with an addiotional column containing the statistical metric (ie. mean(), std(), meanFreq()). However, this was not done because it's not obvious that would make the data any easier to work with or more clear.
-Criteria 2 is satisfied because each row is a single observation about a specific subject and activity.
+Criteria 1 is satisifed because each column is it's own feature of the data. It would be possible to further parse the data with an addiotional column containing the statistical metric (ie. mean(), std(), meanFreq()). However, this was not done because it's not obvious that would make the data any easier to work with or more clear.  
+Criteria 2 is satisfied because each row is a single observation about a specific subject and activity.  
 Criteria 3 is satisfied because we only have one table that contains observational units about subject's accelerometer data. 
